@@ -31,10 +31,14 @@ Modify [users.js](./routes/users.js)
 where property is a rout path parameter and represents one of the properties of the user object
 property can be: `id`, `firstname`, `lastname`, `email`, `avatar`, `occupation` 
 - In `POST` request body your endpoint will receive an object `{ keyword: "text" }`
-- endpoint should read local [users.js](./data/users.js) file and return only those user objects where property (passed in route path) 
-value contains text passed in the `POST` request body
+- Endpoint should read local [users.js](./data/users.js) file and return only those user objects where property (passed in route path) 
+value contains text passed in the `POST` request body, 
+if no matches found return empty response with status code 404
 
 For example:
 
-![screenshot](./data/screenshot.png)
+![screenshot1](./data/screenshot1.png)
+![screenshot2](./data/screenshot2.png)
+![screenshot3](./data/screenshot3.png)
+![screenshot4](./data/screenshot4.png)
 
